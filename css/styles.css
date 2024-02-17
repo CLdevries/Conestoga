@@ -1,0 +1,171 @@
+/* Here I am creating the page Font size of 20px with the shorthand method */
+html {font-size: 20px;}
+
+/* setting h1 and h2 to the font-variant to small-caps*/
+h1, h2 {font-variant: small-caps;}
+
+/* Make captions bold, with a font style and set the height. also appear in small capitals, and slightly larger */
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+/* Make quotations italic and in cursive font, and slightly larger */
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+/* Make text in footer smaller */
+footer p {
+    font-size: 0.8rem; 
+}
+
+/* Set width and max-width for the body */
+body {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Set width and height for image elements */
+img.main-image {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Set width and height for figure elements */
+figure.main-section-figure {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Set width for iframe/video elements */
+iframe, video {
+    width: 100%; 
+}
+
+/* Padding and alignment for the body */
+body {
+    padding: 20px; 
+    margin: 0 auto; 
+}
+
+/* Center align text in header and footer */
+header, footer {
+    text-align: center;
+}
+
+/* Center align text and add padding for sections in the main */
+main .mainsection {
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Align text to the left for the biography blockquote */
+#bio blockquote {
+    text-align: left;
+}
+
+/* Add padding to image elements */
+img {
+    padding: 10px; 
+}
+
+/* Add padding and margins to figure elements */
+figure.main-section-figure {
+    padding: 10px; 
+    margin: 20px auto; 
+}
+
+/* Add padding to the blockquote with the q element nested */
+#quote blockquote q {
+    padding: 10px; 
+}
+
+/* Add padding to the iframe/video elements */
+iframe, video {
+    padding: 10px; 
+}
+
+/* Border for header and footer */
+header, footer {
+    border: 2px solid rgb(99, 98, 98); 
+}
+
+/* Rounded corners for images */
+img {
+    border-radius: 10px;
+}
+
+/* Border for figure element with relative path image */
+#relative-path-image {
+    border: 3px solid rgb(0, 146, 7); 
+    border-radius: 10px; 
+}
+
+/* Border for figure element with absolute path image */
+#absolute-path-image {
+    border: 3px solid rgb(202, 6, 6); 
+    border-radius: 10px;
+}
+
+/* Border for video/iframe element */
+iframe, video {
+    border: 2px solid rgb(0, 0, 255); 
+    border-radius: 10px; 
+}
+
+/* Border for blockquote with q element nested */
+#quote blockquote q {
+    border: 2px solid rgb(250, 2, 2); 
+}
+
+/* Box shadow for blockquote with q element nested */
+#quote blockquote q {
+    box-shadow: 5px 5px 5px rgb(126, 126, 126); 
+    
+}
+/* Border shorthand declaration for iframe/video element */
+iframe, video {
+    border: 2px solid rgb(1, 1, 240); 
+    border-radius: 10px;
+}
+
+/* Font colour ruleset for figcaption with relative path image */
+#relative-path-image figcaption {
+    color: rgb(0, 146, 7); 
+}
+
+/* Font colour ruleset for figcaption with absolute path image */
+#absolute-path-image figcaption {
+    color: rgb(202, 6, 6); 
+}
+
+/* Set font color for h1 and h2 using a named colour */
+h1, h2 {
+    color: navy;
+}
+
+/* Gradient background for header and footer */
+header, footer {
+    background: rgb(240, 240, 240); 
+}
+
+/* Background color for sections */
+main {
+    background-color: hsla(56, 100%, 42%, 0.5); 
+}
+
+/* Background color for figure element with absolute path image */
+#absolute-path-image {
+    background-color: hsla(0, 100%, 50%, 0.3); 
+}
+
+/* Background color for figure element with relative path image */
+#relative-path-image {
+    background-color: hsla(106, 100%, 45%, 0.3); 
+}
