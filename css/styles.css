@@ -1,171 +1,320 @@
-/* Here I am creating the page Font size of 20px with the shorthand method */
-html {font-size: 20px;}
+/* Student Name: Cameron de Vries */
+/* Student Number: 8913756 */
 
-/* setting h1 and h2 to the font-variant to small-caps*/
-h1, h2 {font-variant: small-caps;}
+/* Global Config */
+* {
+    box-sizing: border-box;
+}
 
-/* Make captions bold, with a font style and set the height. also appear in small capitals, and slightly larger */
+/* code for the base font size and family */
+html {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling - headers */
+h1, h2 {
+    font-variant: small-caps;
+    color: navy;
+}
+
+/* Styling - figcaptions */
 figcaption {
     font-weight: bold;
     font-variant: small-caps;
     font-size: 1.1rem;
-    font-family: Arial, sans-serif;
     line-height: 1.2;
 }
 
-/* Make quotations italic and in cursive font, and slightly larger */
+/* Styling - quotes */
 q {
     font-style: italic;
     font-family: cursive;
     font-size: 1.2rem;
 }
 
-/* Make text in footer smaller */
+/* Styling - Footer */
 footer p {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
 }
 
-/* Set width and max-width for the body */
+/* Styling - Body */
 body {
     width: 90%;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e6e6e6;
+    color: #333;
 }
 
-/* Set width and height for image elements */
-img.main-image {
-    width: 100%; 
-    height: auto; 
+/* Responsive styling - image/video */
+img, iframe, video {
+    display: block;
+    max-width: 100%;
+    height: 20px auto;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 40px;
 }
 
-/* Set width and height for figure elements */
-figure.main-section-figure {
-    width: 100%; 
-    height: auto; 
-}
-
-/* Set width for iframe/video elements */
-iframe, video {
-    width: 100%; 
-}
-
-/* Padding and alignment for the body */
-body {
-    padding: 20px; 
-    margin: 0 auto; 
-}
-
-/* Center align text in header and footer */
+/* styling for Header and footer combo */
 header, footer {
+    text-align: center;
+    border: 2px solid rgb(99, 98, 98);
+    background: linear-gradient(rgb(240, 240, 240), rgb(210, 210, 210));
+}
+
+/* styling - Main section */
+.main-section {
+    text-align: center;
+    padding: 20px;
+    background-color: hsla(56, 100%, 42%, 0.5);
+}
+
+/* styling - Blockquote */
+#bio-blockquote, #quote-blockquote {
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* styling - Figure/image + borders */
+figure.main-section-figure, #absolute-path-image, #relative-path-image {
+    margin: 20px auto;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+/* figure border colors */
+#absolute-path-image {
+    border-color: rgb(202, 6, 6);
+    background-color: hsla(0, 100%, 50%, 0.3);
+}
+
+#relative-path-image {
+    border-color: rgb(0, 146, 7);
+    background-color: hsla(106, 100%, 45%, 0.3);
+}
+
+/* styling - Nav */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-/* Center align text and add padding for sections in the main */
-main .mainsection {
-    text-align: center; 
-    padding: 20px; 
+nav li {
+    display: inline-block;
+    margin-right: -4px;
 }
 
-/* Align text to the left for the biography blockquote */
-#bio blockquote {
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #9c0015;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    border: 2px solid #9c0015;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #005a9c;
+}
+
+/* styling - Iframe and video borders  */
+iframe, video {
+    border: 2px solid rgb(0, 0, 255);
+}
+
+/* Styling - Form, Labels, and Input-cntls */
+form {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+label {
+    color: #333;
+    font-variant: normal;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
     text-align: left;
 }
 
-/* Add padding to image elements */
-img {
-    padding: 10px; 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="color"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
 }
 
-/* Add padding and margins to figure elements */
-figure.main-section-figure {
-    padding: 10px; 
-    margin: 20px auto; 
+textarea {
+    height: auto;
 }
 
-/* Add padding to the blockquote with the q element nested */
-#quote blockquote q {
-    padding: 10px; 
+/* Where I realised, how I could have Fixed my last assignments edges (-_-) */
+
+input[type="submit"] {
+    background-color: #005a9c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: auto; 
+    padding: 0 20px; 
+    border-radius: 4px; 
+    border: none; 
 }
 
-/* Add padding to the iframe/video elements */
-iframe, video {
-    padding: 10px; 
+/* Darker shading for the hover */
+
+input[type="submit"]:hover {
+    background-color: #003d73; 
 }
 
-/* Border for header and footer */
-header, footer {
-    border: 2px solid rgb(99, 98, 98); 
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #005a9c;
+    outline: none; 
 }
 
-/* Rounded corners for images */
-img {
-    border-radius: 10px;
+/* Aside Headings */
+aside h3 {
+    font-variant: normal;
+    color: #005a9c;
+    text-align: center;
 }
 
-/* Border for figure element with relative path image */
-#relative-path-image {
-    border: 3px solid rgb(0, 146, 7); 
-    border-radius: 10px; 
+/* Styling - Aside Table */
+aside table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Border for figure element with absolute path image */
-#absolute-path-image {
-    border: 3px solid rgb(202, 6, 6); 
-    border-radius: 10px;
-}
-
-/* Border for video/iframe element */
-iframe, video {
-    border: 2px solid rgb(0, 0, 255); 
-    border-radius: 10px; 
-}
-
-/* Border for blockquote with q element nested */
-#quote blockquote q {
-    border: 2px solid rgb(250, 2, 2); 
-}
-
-/* Box shadow for blockquote with q element nested */
-#quote blockquote q {
-    box-shadow: 5px 5px 5px rgb(126, 126, 126); 
-    
-}
-/* Border shorthand declaration for iframe/video element */
-iframe, video {
-    border: 2px solid rgb(1, 1, 240); 
-    border-radius: 10px;
-}
-
-/* Font colour ruleset for figcaption with relative path image */
-#relative-path-image figcaption {
-    color: rgb(0, 146, 7); 
-}
-
-/* Font colour ruleset for figcaption with absolute path image */
-#absolute-path-image figcaption {
-    color: rgb(202, 6, 6); 
-}
-
-/* Set font color for h1 and h2 using a named colour */
-h1, h2 {
+aside th, aside td {
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
     color: navy;
+    text-align: center;
+    padding: 8px;
 }
 
-/* Gradient background for header and footer */
-header, footer {
-    background: rgb(240, 240, 240); 
+/* Styling - Aside Links */
+aside ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Background color for sections */
-main {
-    background-color: hsla(56, 100%, 42%, 0.5); 
+aside a {
+    text-decoration: none;
+    color: #9c0015;
+    line-height: 2;
 }
 
-/* Background color for figure element with absolute path image */
-#absolute-path-image {
-    background-color: hsla(0, 100%, 50%, 0.3); 
+aside a:hover {
+    color: #005a9c;
 }
 
-/* Background color for figure element with relative path image */
-#relative-path-image {
-    background-color: hsla(106, 100%, 45%, 0.3); 
+/* visual appeal */
+aside {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* All links to have the same color */
+a {
+    color: #9c0015; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005a9c;
+}
+
+/* Screen size requirement (Medium) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    #main-content, #sidebar {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul li, nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-section, aside, footer, header {
+        padding: 10px;
+    }
+}
+
+/* Screen size requirement (Small) */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px; 
+    }
+
+    #main-content, #sidebar {
+        padding: 5px; 
+    }
+
+    nav ul li, nav a {
+        padding: 10px 5px; 
+    }
+
+    .main-section, aside, footer, header {
+        padding: 5px; 
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="color"],
+    select,
+    textarea,
+    input[type="submit"] {
+        width: calc(100% - 10px);
+        margin-bottom: 15px;
+        height: auto;
+    }
+}
+
+/* Screen size requirement (Extra Small) */
+@media (max-width: 480px) {
+    
+    html {
+        font-size: 14px; 
+    }
+    
 }
